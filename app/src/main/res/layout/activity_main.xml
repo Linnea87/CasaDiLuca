@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:orientation="vertical"
+        android:gravity="top"
+        tools:context=".MainActivity">
+
+    <!-- HERO SECTION -->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hero_height"
+            android:layout_marginBottom="@dimen/padding_standard">
+
+        <ImageView
+                android:id="@+id/imageHero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hero_casa_di_luca"
+                android:contentDescription="@string/casa_di_luca_hero_image" />
+
+        <View
+                android:id="@+id/imageHeroOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/overlay_dark" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/overlay_card"
+                android:paddingHorizontal="@dimen/hero_title_padding_horizontal"
+                android:paddingVertical="@dimen/button_padding_vertical"
+                android:layout_margin="@dimen/hero_title_margin">
+
+            <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CASA DI LUCA"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:letterSpacing="0.08"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/button_margin_bottom" />
+
+            <TextView
+                    android:id="@+id/textSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authentic_italian_flavors_made_with_love"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:letterSpacing="0.03"
+                    android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- CATEGORY TITLE (shown when a category is selected) -->
+    <TextView
+            android:id="@+id/textCategoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/starters"
+            android:textColor="@color/menu_title_color"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/menu_margin_top"
+            android:layout_marginBottom="@dimen/menu_margin_bottom"
+            android:visibility="gone" />
+
+    <View
+            android:id="@+id/viewMenuDivider"
+            android:layout_width="@dimen/menu_divider_width"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_gravity="center"
+            android:background="@color/underline_color"
+            android:layout_marginBottom="@dimen/menu_divider_margin_bottom"
+            android:visibility="gone" />
+
+
+    <!-- DISHES LIST (hidden until a category is selected) -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDishes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_standard"
+            android:visibility="gone" />
+
+    <Button
+            android:id="@+id/buttonBackToMenu"
+            style ="@style/BackButtonStyle"
+            android:text="@string/back_to_menu"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    <!-- MENU SECTION (menu title + divider + buttons) -->
+    <LinearLayout
+            android:id="@+id/layoutMenuSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/textMenuTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu"
+                android:textColor="@color/menu_title_color"
+                android:textSize="22sp"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/menu_margin_top"
+                android:layout_marginBottom="@dimen/menu_margin_bottom" />
+
+        <View
+                android:layout_width="@dimen/menu_divider_width"
+                android:layout_height="@dimen/menu_divider_height"
+                android:layout_gravity="center"
+                android:background="@color/underline_color"
+                android:layout_marginBottom="@dimen/menu_divider_margin_bottom" />
+
+        <!-- MENU BUTTONS -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/button_margin_bottom">
+
+            <Button
+                    style="@style/MenuButtonStyle"
+                    android:text="@string/drinks" />
+
+            <Button
+                    android:id="@+id/buttonStarters"
+                    style="@style/MenuButtonStyle"
+                    android:text="Starters" />
+
+            <Button
+                    android:id="@+id/buttonMains"
+                    style="@style/MenuButtonStyle"
+                    android:text="Main Courses" />
+
+            <Button
+                    android:id="@+id/buttonDesserts"
+                    style="@style/MenuButtonStyle"
+                    android:text="Dessert" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

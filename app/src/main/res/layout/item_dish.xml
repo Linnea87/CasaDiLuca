@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_standard"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:background="@drawable/dish_card_background"
+        android:gravity="center_vertical">
+
+    <ImageView
+            android:id="@+id/imageDish"
+            android:layout_width="@dimen/dish_image_size"
+            android:layout_height="@dimen/dish_image_size"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/image_rounded_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/dish_image"
+            android:clipToOutline="true"
+            android:outlineProvider="background" />
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginBottom="@dimen/spacing_xs">
+
+        <TextView
+                android:id="@+id/textDishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menu_title_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:alpha="0.9" />
+
+        <TextView
+                android:id="@+id/textDishDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:textColor="@color/menu_title_color"
+                android:textSize="14sp"
+                android:alpha="0.8" />
+    </LinearLayout>
+
+</LinearLayout>

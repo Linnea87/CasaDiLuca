@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base spacing -->
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Universal corner radius (used for cards, buttons, etc.) -->
+    <dimen name="corner_radius_standard">16dp</dimen>
+    <dimen name="card_elevation_standard">6dp</dimen>
+
+
+    <!-- Hero section -->
+    <dimen name="hero_height">240dp</dimen>
+    <dimen name="hero_title_padding_horizontal">22dp</dimen>
+    <dimen name="hero_title_padding_vertical">18dp</dimen>
+    <dimen name="hero_title_margin">8dp</dimen>
+
+    <!-- Text spacing -->
+    <dimen name="title_margin_bottom">4dp</dimen>
+    <dimen name="menu_margin_top">8dp</dimen>
+    <dimen name="menu_margin_bottom">4dp</dimen>
+
+    <!-- Divider below Menu -->
+
+    <dimen name="menu_divider_width">100dp</dimen>
+    <dimen name="menu_divider_height">2dp</dimen>
+    <dimen name="menu_divider_margin_bottom">16dp</dimen>
+
+    <!-- Menu category buttons -->
+    <dimen name="button_padding_vertical">10dp</dimen>
+    <dimen name="button_margin_bottom">12dp</dimen>
+    <dimen name="button_margin_horizontal">24dp</dimen>
+    <dimen name="button_stroke_width">1dp</dimen>
+
+    <!-- Dish image size -->
+    <dimen name="dish_image_size">90dp</dimen>
+
+    <!-- Reserved for future sections -->
+    <dimen name="section_spacing">32dp</dimen>
+
+</resources>

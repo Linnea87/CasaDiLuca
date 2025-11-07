@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- background drawable -->
+        <item name="android:background">@drawable/button_background</item>
+
+        <!-- Turn off Material's purple tint -->
+        <item name="backgroundTint">@null</item>
+
+        <!-- outer margin (spacing around the button) -->
+        <item name="android:layout_marginStart">@dimen/button_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
+
+        <!-- inner padding -->
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+
+        <!-- text -->
+        <item name="android:textColor">@color/menu_title_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BackButtonStyle" parent="MenuButtonStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingVertical">@dimen/spacing_xs</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:textColor">@color/menu_title_color</item>
+
+    </style>
+
+</resources>

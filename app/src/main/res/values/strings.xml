@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CasaDiLuca</string>
+    <string name="dish_image">Dish image</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="short_description_of_the_dish_goes_here">Short description of the dish goes here...</string>
+    <string name="casa_di_luca_hero_image">Casa di Luca hero image</string>
+    <string name="authentic_italian_flavors_made_with_love">Authentic Italian flavors made with love</string>
+    <string name="starters">Starters</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="menu">Menu</string>
+    <string name="drinks">Drinks</string>
+</resources>
