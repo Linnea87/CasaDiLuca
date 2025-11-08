@@ -1,12 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- ===== APP INFO ========================================== -->
+
     <string name="app_name">CasaDiLuca</string>
-    <string name="dish_image">Dish image</string>
-    <string name="dish_name">Dish Name</string>
-    <string name="short_description_of_the_dish_goes_here">Short description of the dish goes here...</string>
-    <string name="casa_di_luca_hero_image">Casa di Luca hero image</string>
-    <string name="authentic_italian_flavors_made_with_love">Authentic Italian flavors made with love</string>
-    <string name="starters">Starters</string>
-    <string name="back_to_menu">Back to menu</string>
-    <string name="menu">Menu</string>
-    <string name="drinks">Drinks</string>
+    <string name="brand_title">CASA DI LUCA</string>
+    <string name="desc_image">Casa di Luca hero image</string>
+    <string name="desc_item">Menu item image</string>
+    <string name="text_tagline">Authentic Italian flavors made with love</string>
+
+    <!-- ===== LABELS ============================================ -->
+
+    <string name="label_image">Image</string>
+    <string name="label_item">Item</string>
+    <string name="label_title">Title</string>
+    <string name="label_desc">Short description...</string>
+
+    <!-- ===== MENU ============================================== -->
+
+    <string name="menu_title">Menu</string>
+    <string name="menu_starters">Starters</string>
+    <string name="menu_mains">Main Courses</string>
+    <string name="menu_desserts">Desserts</string>
+    <string name="menu_drinks">Drinks</string>
+
+    <!-- ===== BUTTONS =========================================== -->
+    <string name="btn_back">Back</string>
+
 </resources>

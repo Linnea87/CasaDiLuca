@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- ====== Neutrals ========================================== -->
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gradient_start">#6B625B</color>
-    <color name="gradient_center">#433E3A</color>
-    <color name="gradient_end">#2E2926</color>
-    <color name="overlay_dark">#33000000</color>
-    <color name="overlay_card">#A3A8A8A8</color>
-    <color name="underline_color">#B36B625B</color>
-    <color name="menu_title_color">#D8CFC7</color>
-    <color name="button_background_color">#5A524C</color>
-    <color name="button_stroke_color">#665C554F</color>
-    <color name="button_gradient_start">#6B5F57</color>
-    <color name="button_gradient_end">#4E4741</color>
-    <color name="dish_card_bg">#3E3732</color>
-    <color name="dish_card_gradient_start">#5A524C</color>
-    <color name="dish_card_gradient_end">#4A433E</color>
+    <color name="neutral_900">#2E2926</color>
+    <color name="neutral_800">#433E3A</color>
+    <color name="neutral_700">#6B625B</color>
+    <color name="neutral_600">#5A524C</color>
+    <color name="neutral_500">#4E4741</color>
+    <color name="neutral_400">#3E3732</color>
+
+    <!-- ====== Overlays ========================================== -->
+
+    <color name="overlay_20">#33000000</color>
+    <color name="overlay_65">#A3A8A8A8</color>
+
+    <!-- ====== Shadows =========================================== -->
+
+    <color name="shadow_soft">#442E2926</color>
+
+    <!-- ====== Strokes ============================================ -->
+
+    <color name="stroke_40">#665C554F</color>
+    <color name="stroke_accent">#B36B625B</color>
+
+    <!-- ====== Text =============================================== -->
+
+    <color name="text_primary">#D8CFC7</color>
+
 </resources>

@@ -4,30 +4,30 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"
+        android:background="@drawable/bg_design"
         android:orientation="vertical"
         android:gravity="top"
         tools:context=".MainActivity">
 
-    <!-- HERO SECTION -->
+    <!-- ===== HERO SECTION ==================================== -->
     <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/hero_height"
-            android:layout_marginBottom="@dimen/padding_standard">
+            android:layout_height="@dimen/height_l"
+            android:layout_marginBottom="@dimen/padding_m">
 
         <ImageView
-                android:id="@+id/imageHero"
+                android:id="@+id/img_hero"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/hero_casa_di_luca"
-                android:contentDescription="@string/casa_di_luca_hero_image" />
+                android:src="@drawable/img_hero_casa_di_luca"
+                android:contentDescription="@string/desc_image" />
 
         <View
-                android:id="@+id/imageHeroOverlay"
+                android:id="@+id/img_hero_overlay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/overlay_dark" />
+                android:background="@color/overlay_20" />
 
         <LinearLayout
                 android:layout_width="wrap_content"
@@ -35,125 +35,126 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:background="@color/overlay_card"
-                android:paddingHorizontal="@dimen/hero_title_padding_horizontal"
-                android:paddingVertical="@dimen/button_padding_vertical"
-                android:layout_margin="@dimen/hero_title_margin">
+                android:background="@color/overlay_65"
+                android:paddingHorizontal="@dimen/padding_m"
+                android:paddingVertical="@dimen/padding_s"
+                android:layout_margin="@dimen/margin_s">
 
             <TextView
-                    android:id="@+id/textTitle"
+                    android:id="@+id/text_hero_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CASA DI LUCA"
-                    android:textColor="@android:color/white"
-                    android:textSize="28sp"
+                    android:text="@string/brand_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_xxl"
                     android:letterSpacing="0.08"
                     android:gravity="center"
-                    android:layout_marginBottom="@dimen/button_margin_bottom" />
+                    android:layout_marginBottom="@dimen/margin_s" />
 
             <TextView
-                    android:id="@+id/textSubtitle"
+                    android:id="@+id/text_hero_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/authentic_italian_flavors_made_with_love"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
+                    android:text="@string/text_tagline"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_s"
                     android:letterSpacing="0.03"
                     android:gravity="center" />
         </LinearLayout>
     </FrameLayout>
 
-    <!-- CATEGORY TITLE (shown when a category is selected) -->
+    <!-- ===== CATEGORY TITLE (shown when a category is selected) ===== -->
     <TextView
-            android:id="@+id/textCategoryTitle"
+            android:id="@+id/menu_category_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/starters"
-            android:textColor="@color/menu_title_color"
-            android:textSize="22sp"
+            android:text="@string/menu_starters"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_l"
             android:gravity="center"
-            android:layout_marginTop="@dimen/menu_margin_top"
-            android:layout_marginBottom="@dimen/menu_margin_bottom"
+            android:layout_marginTop="@dimen/margin_s"
+            android:layout_marginBottom="@dimen/margin_s"
             android:visibility="gone" />
 
     <View
-            android:id="@+id/viewMenuDivider"
-            android:layout_width="@dimen/menu_divider_width"
-            android:layout_height="@dimen/menu_divider_height"
+            android:id="@+id/menu_divider"
+            android:layout_width="@dimen/width_m"
+            android:layout_height="@dimen/stroke_s"
             android:layout_gravity="center"
-            android:background="@color/underline_color"
-            android:layout_marginBottom="@dimen/menu_divider_margin_bottom"
+            android:background="@color/stroke_accent"
+            android:layout_marginBottom="@dimen/margin_m"
             android:visibility="gone" />
 
-
-    <!-- DISHES LIST (hidden until a category is selected) -->
+    <!-- ===== MENU LIST (RecyclerView) =============================== -->
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerDishes"
+            android:id="@+id/menu_recycler"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:padding="@dimen/padding_standard"
+            android:padding="@dimen/padding_m"
             android:visibility="gone" />
 
+    <!-- ===== BACK BUTTON ============================================ -->
     <Button
-            android:id="@+id/buttonBackToMenu"
-            style ="@style/BackButtonStyle"
-            android:text="@string/back_to_menu"
+            android:id="@+id/btn_back"
+            style="@style/BackBtnStyle"
+            android:text="@string/btn_back"
             android:layout_gravity="center"
             android:visibility="gone" />
 
-    <!-- MENU SECTION (menu title + divider + buttons) -->
+    <!-- ===== MENU SECTION =========================================== -->
     <LinearLayout
-            android:id="@+id/layoutMenuSection"
+            android:id="@+id/menu_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
         <TextView
-                android:id="@+id/textMenuTitle"
+                android:id="@+id/menu_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/menu"
-                android:textColor="@color/menu_title_color"
-                android:textSize="22sp"
+                android:text="@string/menu_title"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_l"
                 android:letterSpacing="0.05"
                 android:gravity="center"
-                android:layout_marginTop="@dimen/menu_margin_top"
-                android:layout_marginBottom="@dimen/menu_margin_bottom" />
+                android:layout_marginTop="@dimen/margin_s"
+                android:layout_marginBottom="@dimen/margin_s" />
 
         <View
-                android:layout_width="@dimen/menu_divider_width"
-                android:layout_height="@dimen/menu_divider_height"
+                android:layout_width="@dimen/width_m"
+                android:layout_height="@dimen/stroke_s"
                 android:layout_gravity="center"
-                android:background="@color/underline_color"
-                android:layout_marginBottom="@dimen/menu_divider_margin_bottom" />
+                android:background="@color/stroke_accent"
+                android:layout_marginBottom="@dimen/margin_m" />
 
-        <!-- MENU BUTTONS -->
+        <!-- ===== MENU BUTTONS ====================================== -->
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginBottom="@dimen/button_margin_bottom">
+                android:layout_marginBottom="@dimen/margin_s">
 
             <Button
-                    style="@style/MenuButtonStyle"
-                    android:text="@string/drinks" />
+                    android:id="@+id/btn_drinks"
+                    style="@style/MenuBtnStyle"
+                    android:text="@string/menu_drinks" />
 
             <Button
-                    android:id="@+id/buttonStarters"
-                    style="@style/MenuButtonStyle"
-                    android:text="Starters" />
+                    android:id="@+id/btn_starters"
+                    style="@style/MenuBtnStyle"
+                    android:text="@string/menu_starters" />
 
             <Button
-                    android:id="@+id/buttonMains"
-                    style="@style/MenuButtonStyle"
-                    android:text="Main Courses" />
+                    android:id="@+id/btn_mains"
+                    style="@style/MenuBtnStyle"
+                    android:text="@string/menu_mains" />
 
             <Button
-                    android:id="@+id/buttonDesserts"
-                    style="@style/MenuButtonStyle"
-                    android:text="Dessert" />
+                    android:id="@+id/btn_desserts"
+                    style="@style/MenuBtnStyle"
+                    android:text="@string/menu_desserts" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

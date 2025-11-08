@@ -2,20 +2,28 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="rectangle">
 
+    <!-- ===== BUTTON BACKGROUND GRADIENT ========================= -->
     <gradient
-            android:startColor="@color/button_gradient_start"
-            android:endColor="@color/button_gradient_end"
+            android:startColor="@color/neutral_700"
+            android:endColor="@color/neutral_500"
             android:angle="90" />
 
-    <corners android:radius="@dimen/corner_radius_standard" />
+    <!-- ===== CORNERS ============================================ -->
+
+    <corners android:radius="@dimen/radius_m" />
+
+    <!-- ===== PADDING ============================================ -->
 
     <padding
-            android:left="@dimen/margin_small"
-            android:right="@dimen/margin_small"
-            android:top="@dimen/spacing_xs"
-            android:bottom="@dimen/spacing_xs" />
+            android:left="@dimen/margin_s"
+            android:right="@dimen/margin_s"
+            android:top="@dimen/margin_xs"
+            android:bottom="@dimen/margin_xs" />
+
+    <!-- ===== BORDER / STROKE =================================== -->
 
     <stroke
-            android:width="@dimen/button_stroke_width"
-            android:color="@color/button_stroke_color" />
+            android:width="@dimen/stroke_s"
+            android:color="@color/stroke_40" />
+
 </shape>

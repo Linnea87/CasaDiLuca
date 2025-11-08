@@ -3,49 +3,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/padding_standard"
-        android:layout_marginBottom="@dimen/margin_small"
-        android:layout_marginHorizontal="@dimen/margin_small"
-        android:background="@drawable/dish_card_background"
+        android:padding="@dimen/padding_m"
+        android:layout_marginBottom="@dimen/margin_s"
+        android:layout_marginHorizontal="@dimen/margin_s"
+        android:background="@drawable/card_design"
         android:gravity="center_vertical">
 
+    <!-- Menu image -->
     <ImageView
-            android:id="@+id/imageDish"
-            android:layout_width="@dimen/dish_image_size"
-            android:layout_height="@dimen/dish_image_size"
-            android:layout_marginEnd="@dimen/margin_medium"
-            android:background="@drawable/image_rounded_background"
+            android:id="@+id/menu_img"
+            android:layout_width="@dimen/height_m"
+            android:layout_height="@dimen/height_m"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:background="@drawable/img_design"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground"
-            android:contentDescription="@string/dish_image"
+            android:contentDescription="@string/desc_item"
             android:clipToOutline="true"
             android:outlineProvider="background" />
 
+    <!-- Text content -->
     <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginStart="@dimen/margin_small"
-            android:layout_marginTop="@dimen/spacing_xs"
-            android:layout_marginBottom="@dimen/spacing_xs">
+            android:layout_marginStart="@dimen/margin_s"
+            android:layout_marginTop="@dimen/margin_xs"
+            android:layout_marginBottom="@dimen/margin_xs">
 
         <TextView
-                android:id="@+id/textDishName"
+                android:id="@+id/menu_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/menu_title_color"
-                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_l"
                 android:textStyle="bold"
                 android:alpha="0.9" />
 
         <TextView
-                android:id="@+id/textDishDescription"
+                android:id="@+id/menu_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_xs"
-                android:textColor="@color/menu_title_color"
-                android:textSize="14sp"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_s"
                 android:alpha="0.8" />
     </LinearLayout>
 

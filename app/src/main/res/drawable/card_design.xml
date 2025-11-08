@@ -2,16 +2,23 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="rectangle">
 
+    <!-- ===== CARD BACKGROUND GRADIENT =========================== -->
+
     <gradient
-            android:startColor="@color/dish_card_gradient_start"
-            android:endColor="@color/dish_card_gradient_end"
+            android:startColor="@color/neutral_600"
+            android:endColor="@color/neutral_500"
             android:angle="90" />
 
-    <corners android:radius="@dimen/corner_radius_standard" />
+    <!-- ===== CORNERS ============================================ -->
+
+    <corners android:radius="@dimen/radius_m" />
+
+    <!-- ===== PADDING ============================================ -->
 
     <padding
-            android:left="@dimen/margin_small"
-            android:right="@dimen/margin_small"
-            android:top="@dimen/spacing_xs"
-            android:bottom="@dimen/spacing_xs" />
+            android:left="@dimen/margin_s"
+            android:right="@dimen/margin_s"
+            android:top="@dimen/margin_xs"
+            android:bottom="@dimen/margin_xs" />
+
 </shape>

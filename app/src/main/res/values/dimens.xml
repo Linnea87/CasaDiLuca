@@ -1,44 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base spacing -->
-    <dimen name="padding_standard">16dp</dimen>
-    <dimen name="spacing_xs">4dp</dimen>
-    <dimen name="margin_small">8dp</dimen>
-    <dimen name="margin_medium">12dp</dimen>
-    <dimen name="margin_large">24dp</dimen>
 
-    <!-- Universal corner radius (used for cards, buttons, etc.) -->
-    <dimen name="corner_radius_standard">16dp</dimen>
-    <dimen name="card_elevation_standard">6dp</dimen>
+    <!-- ===== MARGIN ============================================ -->
 
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_m">12dp</dimen>
+    <dimen name="margin_l">24dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
 
-    <!-- Hero section -->
-    <dimen name="hero_height">240dp</dimen>
-    <dimen name="hero_title_padding_horizontal">22dp</dimen>
-    <dimen name="hero_title_padding_vertical">18dp</dimen>
-    <dimen name="hero_title_margin">8dp</dimen>
+    <!-- ===== PADDING =========================================== -->
 
-    <!-- Text spacing -->
-    <dimen name="title_margin_bottom">4dp</dimen>
-    <dimen name="menu_margin_top">8dp</dimen>
-    <dimen name="menu_margin_bottom">4dp</dimen>
+    <dimen name="padding_xs">4dp</dimen>
+    <dimen name="padding_s">8dp</dimen>
+    <dimen name="padding_m">16dp</dimen>
+    <dimen name="padding_l">24dp</dimen>
 
-    <!-- Divider below Menu -->
+    <!-- ===== SIZE (general element sizes) ====================== -->
 
-    <dimen name="menu_divider_width">100dp</dimen>
-    <dimen name="menu_divider_height">2dp</dimen>
-    <dimen name="menu_divider_margin_bottom">16dp</dimen>
+    <dimen name="size_xs">8dp</dimen>
+    <dimen name="size_s">16dp</dimen>
+    <dimen name="size_m">32dp</dimen>
+    <dimen name="size_l">64dp</dimen>
+    <dimen name="size_xl">128dp</dimen>
 
-    <!-- Menu category buttons -->
-    <dimen name="button_padding_vertical">10dp</dimen>
-    <dimen name="button_margin_bottom">12dp</dimen>
-    <dimen name="button_margin_horizontal">24dp</dimen>
-    <dimen name="button_stroke_width">1dp</dimen>
+    <!-- ===== HEIGHT ============================================ -->
 
-    <!-- Dish image size -->
-    <dimen name="dish_image_size">90dp</dimen>
+    <dimen name="height_s">40dp</dimen>
+    <dimen name="height_m">90dp</dimen>
+    <dimen name="height_l">240dp</dimen>
+    <dimen name="height_xl">320dp</dimen>
 
-    <!-- Reserved for future sections -->
-    <dimen name="section_spacing">32dp</dimen>
+    <!-- ===== WIDTH ============================================= -->
+
+    <dimen name="width_s">40dp</dimen>
+    <dimen name="width_m">100dp</dimen>
+    <dimen name="width_l">200dp</dimen>
+    <dimen name="width_xl">320dp</dimen>
+
+    <!-- ===== RADIUS ============================================ -->
+
+    <dimen name="radius_s">8dp</dimen>
+    <dimen name="radius_m">16dp</dimen>
+    <dimen name="radius_l">24dp</dimen>
+
+    <!-- ===== ELEVATION ========================================= -->
+
+    <dimen name="elevation_s">2dp</dimen>
+    <dimen name="elevation_m">6dp</dimen>
+    <dimen name="elevation_l">12dp</dimen>
+
+    <!-- ===== STROKE ============================================ -->
+
+    <dimen name="stroke_s">1dp</dimen>
+    <dimen name="stroke_m">2dp</dimen>
+    <dimen name="stroke_l">3dp</dimen>
+
+    <!-- ===== TEXT SIZE ========================================= -->
+
+    <dimen name="text_xs">12sp</dimen>
+    <dimen name="text_s">14sp</dimen>
+    <dimen name="text_m">16sp</dimen>
+    <dimen name="text_l">18sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_xxl">28sp</dimen>
 
 </resources>
