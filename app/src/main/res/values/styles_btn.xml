@@ -5,7 +5,7 @@
         <item name="android:layout_height">wrap_content</item>
 
         <!-- background drawable -->
-        <item name="android:background">@drawable/button_background</item>
+        <item name="android:background">@drawable/btn_design</item>
 
         <!-- Turn off Material's purple tint -->
         <item name="backgroundTint">@null</item>
