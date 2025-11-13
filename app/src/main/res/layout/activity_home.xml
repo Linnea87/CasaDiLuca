@@ -74,6 +74,25 @@
         </LinearLayout>
     </FrameLayout>
 
+    <!-- ===== WELCOME / NEWS SECTION =============================== -->
+    <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_l"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_s"
+            android:layout_marginBottom="@dimen/margin_s" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_m"
+            android:clipToPadding="false"
+            tools:listitem="@layout/card_container" />
     <!-- ===== CATEGORY TITLE (shown when a category is selected) ===== -->
     <TextView
             android:id="@+id/menu_category_title"

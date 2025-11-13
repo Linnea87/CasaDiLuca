@@ -10,6 +10,15 @@
     <string name="desc_item">Menu item image</string>
     <string name="text_tagline">Authentic Italian flavors made with love</string>
 
+    <string name="home_title">Welcome</string>
+
+    <string name="home_item_2_title">New desserts</string>
+    <string name="home_item_2_desc">Try our creamy panna cotta or classic tiramisù.</string>
+
+    <string name="home_item_3_title">Seasonal drinks</string>
+    <string name="home_item_3_desc">Fresh summer cocktails are now available.</string>
+
+
     <!-- ===== POPUP INFO ============================================ -->
 
     <string name="popup_title">About Casa di Luca</string>

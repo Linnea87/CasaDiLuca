@@ -22,6 +22,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var btnBack: Button
     private lateinit var menuDivider: View
     private lateinit var btnInfo: ImageButton
+    private lateinit var homeRecycler: RecyclerView      // 👈 NY
+    private lateinit var homeAdapter: HomeAdapter
 
     // ====== Lifecycle =========================================
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +43,11 @@ class HomeActivity : AppCompatActivity() {
         btnBack = findViewById(R.id.btn_back)
         menuDivider = findViewById(R.id.menu_divider)
         btnInfo = findViewById(R.id.btn_info)
+
+        homeRecycler = findViewById(R.id.home_recycler)
+        homeAdapter = HomeAdapter(HomeData.items)
+        homeRecycler.layoutManager = LinearLayoutManager(this)
+        homeRecycler.adapter = homeAdapter
 
         // ---- Setup: RecyclerView ------------------------------
         menuRecycler.layoutManager = LinearLayoutManager(this)

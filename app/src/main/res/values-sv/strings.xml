@@ -8,6 +8,13 @@
     <string name="desc_item">Bild på menyitem</string>
     <string name="text_tagline">Äkta italienska smaker gjorda med kärlek</string>
 
+    <string name="home_title">Välkommen</string>
+    <string name="home_item_2_title">Nya desserter</string>
+    <string name="home_item_2_desc">Testa vår krämiga pannacotta eller klassiska tiramisù.</string>
+
+    <string name="home_item_3_title">Säsongens drycker</string>
+    <string name="home_item_3_desc">Fräscha sommardrinkar finns nu på menyn.</string>
+
     <!-- ===== POPUP INFO ============================================ -->
 
     <string name="popup_title">Om Casa di Luca</string>
