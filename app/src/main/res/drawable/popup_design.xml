@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ===== POPUP BACKGROUND GRADIENT ======================== -->
+    <gradient
+            android:startColor="@color/neutral_700"
+            android:endColor="@color/neutral_500"
+            android:angle="90" />
+
+    <!-- ===== CORNERS =========================================== -->
+
+    <corners android:radius="@dimen/radius_m" />
+
+    <!-- ===== PADDING ============================================ -->
+
+    <padding
+            android:left="@dimen/padding_m"
+            android:right="@dimen/padding_m"
+            android:top="@dimen/padding_m"
+            android:bottom="@dimen/padding_m" />
+
+    <!-- ===== STROKE ============================================= -->
+
+    <stroke
+            android:width="@dimen/stroke_s"
+            android:color="@color/stroke_40" />
+</shape>

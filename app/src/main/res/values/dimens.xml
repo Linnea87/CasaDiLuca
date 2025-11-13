@@ -24,6 +24,10 @@
     <dimen name="size_l">64dp</dimen>
     <dimen name="size_xl">128dp</dimen>
 
+    <!-- ===== TOUCH TARGET ===================================== -->
+
+    <dimen name="size_touch">48dp</dimen>
+
     <!-- ===== HEIGHT ============================================ -->
 
     <dimen name="height_s">40dp</dimen>

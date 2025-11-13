@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/popup_design"
+        android:padding="@dimen/padding_m"
+        android:layout_margin="@dimen/margin_m"
+        android:elevation="@dimen/elevation_m">
+
+    <!-- ===== CLOSE BUTTON ===================================== -->
+
+    <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/size_touch"
+            android:layout_height="@dimen/size_touch"
+            android:layout_gravity="top|end"
+            android:src="@drawable/ic_close"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/padding_xs"
+            android:contentDescription="@string/popup_close" />
+
+    <!-- ===== TITLE ============================================ -->
+    <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_l"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_s"/>
+
+    <!-- ===== DESCRIPTION ====================================== -->
+    <TextView
+            android:id="@+id/popup_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_desc"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_s"
+            android:layout_marginBottom="@dimen/margin_m"/>
+
+    <!-- ===== OPENING HOURS ==================================== -->
+
+    <TextView
+            android:id="@+id/popup_hours_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_hours_title"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_s"/>
+
+    <TextView
+            android:id="@+id/popup_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_hours"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_s"
+            android:layout_marginBottom="@dimen/margin_m"/>
+
+    <!-- ===== ADDRESS ==================================== -->
+
+    <TextView
+            android:id="@+id/popup_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_address_title"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_s"/>
+
+    <TextView
+            android:id="@+id/popup_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_address"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_s"
+            android:layout_marginBottom="@dimen/margin_m"/>
+
+    <!-- ===== SOCIAL LINKS ====================================== -->
+
+    <TextView
+            android:id="@+id/popup_social_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_social_title"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_s"
+            android:layout_marginBottom="@dimen/margin_s" />
+
+    <LinearLayout
+            android:id="@+id/popup_social_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/popup_instagram"
+                android:layout_width="@dimen/size_touch"
+                android:layout_height="@dimen/size_touch"
+                android:src="@drawable/ic_instagram"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/popup_instagram"
+                android:layout_marginEnd="@dimen/margin_m" />
+
+        <ImageButton
+                android:id="@+id/popup_facebook"
+                android:layout_width="@dimen/size_touch"
+                android:layout_height="@dimen/size_touch"
+                android:src="@drawable/ic_facebook"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/popup_facebook"
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

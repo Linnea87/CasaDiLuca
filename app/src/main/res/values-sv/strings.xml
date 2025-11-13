@@ -4,8 +4,26 @@
     <string name="app_name">Casa di Luca</string>
     <string name="brand_title">CASA DI LUCA</string>
     <string name="desc_image">Hero-bild för Casa di Luca</string>
+    <string name="desc_info_icon">Informationsknapp</string>
     <string name="desc_item">Bild på menyitem</string>
     <string name="text_tagline">Äkta italienska smaker gjorda med kärlek</string>
+
+    <!-- ===== POPUP INFO ============================================ -->
+
+    <string name="popup_title">Om Casa di Luca</string>
+    <string name="popup_desc">En familjeägd restaurang med fokus på äkta italiensk mat.</string>
+
+    <string name="popup_hours_title">Öppettider</string>
+    <string name="popup_hours">Mån–Sön: 11:00–23:00</string>
+
+    <string name="popup_address_title">Adress</string>
+    <string name="popup_address">Kungsgatan 12, Alingsås</string>
+
+    <string name="popup_social_title">Följ oss</string>
+    <string name="popup_instagram">Instagram</string>
+    <string name="popup_facebook">Facebook</string>
+
+    <string name="popup_close">Stäng</string>
 
     <!-- LABELS -->
     <string name="label_image">Bild</string>
