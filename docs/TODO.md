@@ -10,6 +10,7 @@
 ---
 
 ## 🏠 Phase 2: Home Screen Redesign
+- [ ] Create new `HomeActivity` as main entry point
 - [ ] Add info icon (“i”) on hero image
 - [ ] Create popup layout for “About Casa di Luca”
 - [ ] Add text: short description, hours, address
@@ -20,12 +21,21 @@
 
 ---
 
-## 🧭 Phase 3: Navigation
+## 🌐 Phase 2.5: Multi-Language Setup (EN + SV)
+- [x] Move all visible text to `strings.xml`
+- [x] Create `values-sv/strings.xml` for Swedish translations
+- [x] Test automatic locale switching
+
+---
+
+## 🧭 Phase 3: Navigation & Activities
+- [ ] Create `MenuActivity` as standalone screen
+- [ ] Connect navigation via Intent: Home → Menu
+- [ ] Add optional `AboutActivity` for future expansion
 - [ ] Remove “Back to menu” button logic
 - [ ] Use Android’s system back navigation temporarily
-- [ ] Design bottom navigation bar (Home / Menu / About)
-- [ ] Connect navigation to switch between fragments
-- [ ] Add icon + label styling for nav items
+- [ ] Plan transition to bottom navigation (Home / Menu / About)
+- [ ] Add icon + label styling for navigation items
 
 ---
 
@@ -48,7 +58,7 @@
 
 ## 🧪 Phase 6: Testing & Polish
 - [ ] Verify all buttons, layouts, and navigation flows
-- [ ] Check all text strings and colors load correctly
+- [ ] Check all text strings and colors load correctly (EN + SV)
 - [ ] Run on multiple screen sizes (small / tablet)
 - [ ] Clean unused resources
 - [ ] Commit final stable build

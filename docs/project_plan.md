@@ -9,6 +9,7 @@ _This document tracks the design, structure, and feature development for Casa di
 - Neutral naming convention implemented (`menu_`, `btn_`, `text_`, etc.).
 - All layouts connected and functioning correctly.
 - Base design is stable and ready for new visual features.
+- **Planned expansion:** Multi-activity structure and bilingual support (EN + SV).
 
 ---
 
@@ -30,9 +31,9 @@ _This document tracks the design, structure, and feature development for Casa di
 ### Section 1 – News
 - Title: Welcome
 - Vertical list of overlay cards:
-  - Image
-  - Title
-  - Short description
+    - Image
+    - Title
+    - Short description
 
 ### Section 2–3 (Future)
 - Horizontal scroll sections (e.g. drinks, desserts)
@@ -40,7 +41,26 @@ _This document tracks the design, structure, and feature development for Casa di
 
 ---
 
-## 🪄 C. Visual System
+## 🌍 C. Multi-Language Support (EN + SV)
+- App text available in both English and Swedish.
+- English = base language (`values/strings.xml`)
+- Swedish = translation (`values-sv/strings.xml`)
+- `locales_config.xml` defines supported locales.
+- App automatically switches based on device language.
+- (Optional) Add in-app language switch via `AppCompatDelegate`.
+
+---
+
+## 🧭 D. App Structure & Navigation Plan
+- **HomeActivity:** main entry point (Home / hero / news)
+- **MenuActivity:** dedicated screen for restaurant menu
+- **AboutActivity:** future screen for detailed restaurant info
+- Use **Intents** for navigation between activities during early development.
+- Later: replace with **BottomNavigationView** and Fragments.
+
+---
+
+## 🪄 E. Visual System
 - Colors: `neutral_xxx`, `overlay_20`, `text_primary`, etc.
 - Typography: `text_xs–xxl`
 - Corners: `radius_m`
@@ -49,17 +69,22 @@ _This document tracks the design, structure, and feature development for Casa di
 
 ---
 
-## 🗺️ D. Future Ideas
-- About section
+## 🗺️ F. Future Ideas
+- About section (expanded)
 - Contact or map section
 - Events or specials carousel
 - Light/dark theme switch
+- Footer with “Find us” and social links
+- locales_config.xml support for explicit language listing
+- In-app language switch (EN/SV) using AppCompatDelegate
 
 ---
 
-## ✅ E. Next Steps
-1. Create `overlay_card.xml` layout
-2. Design info popup component for the hero section
-3. Add scrollable “News” section
-4. Integrate social media icons (static links)
-5. Begin visual refinement (spacing, shadows, typography)
+## ✅ G. Next Steps
+1. Create `HomeActivity` and layout (`activity_home.xml`)
+2. Create `MenuActivity` and connect via Intent
+3. Add info popup component for the hero section
+4. Add scrollable “News” section
+5. Implement bilingual text structure (EN/SV)
+6. Integrate social media icons (static links)
+7. Begin visual refinement (spacing, shadows, typography)
