@@ -10,12 +10,12 @@
 ---
 
 ## 🏠 Phase 2: Home Screen Redesign
-- [ ] Create new `HomeActivity` as main entry point
-- [ ] Add info icon (“i”) on hero image
-- [ ] Create popup layout for “About Casa di Luca”
-- [ ] Add text: short description, hours, address
-- [ ] Include Instagram / Facebook icons
-- [ ] Add close button for popup
+- [x] Create new `HomeActivity` as main entry point
+- [x] Add info icon (“i”) on hero image
+- [x] Create popup layout for “About Casa di Luca”
+- [x] Add text: short description, hours, address
+- [x] Include Instagram / Facebook icons
+- [x] Add close button for popup
 - [ ] Create and style overlay cards for “Welcome / News”
 - [ ] Connect vertical scroll with overlay cards on Home
 
