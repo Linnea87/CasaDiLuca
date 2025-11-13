@@ -5,18 +5,18 @@ object MenuData {
     // ====== Starters =======================================
     val starters = mutableListOf(
         MenuItem(
-            name = "Bruschetta",
-            description = "Grilled bread with tomatoes and olive oil",
+            nameResId = R.string.item_name_starter_1,
+            descriptionResId = R.string.item_desc_starter_1,
             imageResId = R.drawable.img_starter_bruschetta
         ),
         MenuItem(
-            name = "Caprese Salad",
-            description = "Mozzarella, tomatoes, and fresh basil",
+            nameResId = R.string.item_name_starter_2,
+            descriptionResId = R.string.item_desc_starter_2,
             imageResId = R.drawable.img_starter_caprese_salad
         ),
         MenuItem(
-            name = "Carpaccio",
-            description = "Thinly sliced beef with olive oil and lemon",
+            nameResId = R.string.item_name_starter_3,
+            descriptionResId = R.string.item_desc_starter_3,
             imageResId = R.drawable.img_starter_carpaccio
         )
     )
@@ -24,18 +24,18 @@ object MenuData {
     // ====== Mains ==========================================
     val mains = mutableListOf(
         MenuItem(
-            name = "Tagliatelle al Ragù",
-            description = "Fresh pasta with slow-cooked meat sauce",
+            nameResId = R.string.item_name_main_1,
+            descriptionResId = R.string.item_desc_main_1,
             imageResId = R.drawable.img_main_tagliatelle
         ),
         MenuItem(
-            name = "Risotto ai Funghi",
-            description = "Creamy risotto with porcini mushrooms",
+            nameResId = R.string.item_name_main_2,
+            descriptionResId = R.string.item_desc_main_2,
             imageResId = R.drawable.img_main_risotto
         ),
         MenuItem(
-            name = "Grilled Sea Bass",
-            description = "Served with lemon, herbs and roasted vegetables",
+            nameResId = R.string.item_name_main_3,
+            descriptionResId = R.string.item_desc_main_3,
             imageResId = R.drawable.img_main_grilled_sea_bass
         )
     )
@@ -43,18 +43,18 @@ object MenuData {
     // ====== Desserts =======================================
     val desserts = mutableListOf(
         MenuItem(
-            name = "Tiramisù",
-            description = "Classic Italian dessert with mascarpone and espresso",
+            nameResId = R.string.item_name_dessert_1,
+            descriptionResId = R.string.item_desc_dessert_1,
             imageResId = R.drawable.img_dessert_tiramisu
         ),
         MenuItem(
-            name = "Panna Cotta",
-            description = "Vanilla cream with berry coulis",
+            nameResId = R.string.item_name_dessert_2,
+            descriptionResId = R.string.item_desc_dessert_2,
             imageResId = R.drawable.img_dessert_panna_cotta
         ),
         MenuItem(
-            name = "Lemon Sorbet",
-            description = "Refreshing sorbet with Sicilian lemon",
+            nameResId = R.string.item_name_dessert_3,
+            descriptionResId = R.string.item_desc_dessert_3,
             imageResId = R.drawable.img_dessert_lemon_sorbet
         )
     )

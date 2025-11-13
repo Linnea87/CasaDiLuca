@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- ===== APP INFO ========================================== -->
 
@@ -25,6 +25,36 @@
     <string name="menu_drinks">Drinks</string>
 
     <!-- ===== BUTTONS =========================================== -->
+
     <string name="btn_back">Back</string>
 
+    <!-- ===== STARTERS ===== -->
+    <string name="item_name_starter_1">Bruschetta</string>
+    <string name="item_desc_starter_1">Grilled bread with tomatoes and olive oil</string>
+
+    <string name="item_name_starter_2">Caprese Salad</string>
+    <string name="item_desc_starter_2">Mozzarella, tomatoes, and fresh basil</string>
+
+    <string name="item_name_starter_3">Carpaccio</string>
+    <string name="item_desc_starter_3">Thinly sliced beef with olive oil and lemon</string>
+
+    <!-- ===== MAINS ===== -->
+    <string name="item_name_main_1">Tagliatelle al Ragù</string>
+    <string name="item_desc_main_1">Fresh pasta with slow-cooked meat sauce</string>
+
+    <string name="item_name_main_2">Risotto ai Funghi</string>
+    <string name="item_desc_main_2">Creamy risotto with porcini mushrooms</string>
+
+    <string name="item_name_main_3">Grilled Sea Bass</string>
+    <string name="item_desc_main_3">Served with lemon, herbs and roasted vegetables</string>
+
+    <!-- ===== DESSERTS ===== -->
+    <string name="item_name_dessert_1">Tiramisù</string>
+    <string name="item_desc_dessert_1">Classic Italian dessert with mascarpone and espresso</string>
+
+    <string name="item_name_dessert_2">Panna Cotta</string>
+    <string name="item_desc_dessert_2">Vanilla cream with berry coulis</string>
+
+    <string name="item_name_dessert_3">Lemon Sorbet</string>
+    <string name="item_desc_dessert_3">Refreshing sorbet with Sicilian lemon</string>
 </resources>

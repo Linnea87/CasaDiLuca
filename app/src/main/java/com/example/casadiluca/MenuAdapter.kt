@@ -29,8 +29,8 @@ class MenuAdapter(
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         val item = items[position]
         holder.image.setImageResource(item.imageResId)
-        holder.title.text = item.name
-        holder.desc.text = item.description
+        holder.title.text = holder.itemView.context.getString(item.nameResId)
+        holder.desc.text = holder.itemView.context.getString(item.descriptionResId)
     }
 
     override fun getItemCount(): Int = items.size

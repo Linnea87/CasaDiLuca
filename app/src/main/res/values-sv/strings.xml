@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- APP INFO -->
+    <string name="app_name">Casa di Luca</string>
+    <string name="brand_title">CASA DI LUCA</string>
+    <string name="desc_image">Hero-bild för Casa di Luca</string>
+    <string name="desc_item">Bild på menyitem</string>
+    <string name="text_tagline">Äkta italienska smaker gjorda med kärlek</string>
+
+    <!-- LABELS -->
+    <string name="label_image">Bild</string>
+    <string name="label_item">Rätt</string>
+    <string name="label_title">Titel</string>
+    <string name="label_desc">Kort beskrivning...</string>
+
+    <!-- MENU -->
+    <string name="menu_title">Meny</string>
+    <string name="menu_starters">Förrätter</string>
+    <string name="menu_mains">Huvudrätter</string>
+    <string name="menu_desserts">Efterrätter</string>
+    <string name="menu_drinks">Drycker</string>
+
+    <!-- BUTTONS -->
+    <string name="btn_back">Tillbaka</string>
+
+    <!-- ===== STARTERS ===== -->
+    <string name="item_name_starter_1">Bruschetta</string>
+    <string name="item_desc_starter_1">Grillat bröd med tomater och olivolja</string>
+
+    <string name="item_name_starter_2">Caprese-sallad</string>
+    <string name="item_desc_starter_2">Mozzarella, tomater och färsk basilika</string>
+
+    <string name="item_name_starter_3">Carpaccio</string>
+    <string name="item_desc_starter_3">Tunt skivad biff med olivolja och citron</string>
+
+    <!-- ===== MAINS ===== -->
+    <string name="item_name_main_1">Tagliatelle al Ragù</string>
+    <string name="item_desc_main_1">Färsk pasta med långkokt köttfärssås</string>
+
+    <string name="item_name_main_2">Risotto ai Funghi</string>
+    <string name="item_desc_main_2">Krämig risotto med porcini-svamp</string>
+
+    <string name="item_name_main_3">Grillad havsabborre</string>
+    <string name="item_desc_main_3">Serveras med citron, örter och rostade grönsaker</string>
+
+    <!-- ===== DESSERTS ===== -->
+    <string name="item_name_dessert_1">Tiramisù</string>
+    <string name="item_desc_dessert_1">Klassisk italiensk dessert med mascarpone och espresso</string>
+
+    <string name="item_name_dessert_2">Panna Cotta</string>
+    <string name="item_desc_dessert_2">Vaniljpudding med bärsås</string>
+
+    <string name="item_name_dessert_3">Citronsorbet</string>
+    <string name="item_desc_dessert_3">Uppfriskande sorbet med siciliansk citron</string>
+</resources>
