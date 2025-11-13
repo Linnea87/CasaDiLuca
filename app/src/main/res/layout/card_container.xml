@@ -14,12 +14,12 @@
             android:src="@drawable/ic_launcher_foreground"
             android:contentDescription="@string/desc_image" />
 
-    <!-- ===== OVERLAY LAYER (gradient/shadow) =============== -->
+    <!-- ===== SIMPLE OVERLAY (NO img_design) ================ -->
     <View
             android:id="@+id/card_overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/img_design" />
+            android:background="@color/overlay_20" />
 
     <!-- ===== TEXT LAYER ==================================== -->
     <LinearLayout

@@ -76,7 +76,7 @@
 
     <!-- ===== WELCOME / NEWS SECTION =============================== -->
     <TextView
-            android:id="@+id/news_title"
+            android:id="@+id/home_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/home_title"
@@ -93,98 +93,11 @@
             android:padding="@dimen/padding_m"
             android:clipToPadding="false"
             tools:listitem="@layout/card_container" />
-    <!-- ===== CATEGORY TITLE (shown when a category is selected) ===== -->
-    <TextView
-            android:id="@+id/menu_category_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_starters"
-            android:textColor="@color/text_primary"
-            android:textSize="@dimen/text_l"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/margin_s"
-            android:layout_marginBottom="@dimen/margin_s"
-            android:visibility="gone" />
 
-    <View
-            android:id="@+id/menu_divider"
-            android:layout_width="@dimen/width_m"
-            android:layout_height="@dimen/stroke_s"
-            android:layout_gravity="center"
-            android:background="@color/stroke_accent"
-            android:layout_marginBottom="@dimen/margin_m"
-            android:visibility="gone" />
-
-    <!-- ===== MENU LIST (RecyclerView) =============================== -->
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/menu_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="@dimen/padding_m"
-            android:visibility="gone" />
-
-    <!-- ===== BACK BUTTON ============================================ -->
     <Button
-            android:id="@+id/btn_back"
-            style="@style/BackBtnStyle"
-            android:text="@string/btn_back"
-            android:layout_gravity="center"
-            android:visibility="gone" />
+            android:id="@+id/btn_open_menu"
+            style="@style/MenuBtnStyle"
+            android:text="@string/menu_title"
+            android:layout_marginBottom="@dimen/margin_m" />
 
-    <!-- ===== MENU SECTION =========================================== -->
-    <LinearLayout
-            android:id="@+id/menu_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        <TextView
-                android:id="@+id/menu_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/menu_title"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/text_l"
-                android:letterSpacing="0.05"
-                android:gravity="center"
-                android:layout_marginTop="@dimen/margin_s"
-                android:layout_marginBottom="@dimen/margin_s" />
-
-        <View
-                android:layout_width="@dimen/width_m"
-                android:layout_height="@dimen/stroke_s"
-                android:layout_gravity="center"
-                android:background="@color/stroke_accent"
-                android:layout_marginBottom="@dimen/margin_m" />
-
-        <!-- ===== MENU BUTTONS ====================================== -->
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginBottom="@dimen/margin_s">
-
-            <Button
-                    android:id="@+id/btn_drinks"
-                    style="@style/MenuBtnStyle"
-                    android:text="@string/menu_drinks" />
-
-            <Button
-                    android:id="@+id/btn_starters"
-                    style="@style/MenuBtnStyle"
-                    android:text="@string/menu_starters" />
-
-            <Button
-                    android:id="@+id/btn_mains"
-                    style="@style/MenuBtnStyle"
-                    android:text="@string/menu_mains" />
-
-            <Button
-                    android:id="@+id/btn_desserts"
-                    style="@style/MenuBtnStyle"
-                    android:text="@string/menu_desserts" />
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>
