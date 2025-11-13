@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     // ====== View References ==================================
     private lateinit var menuRecycler: RecyclerView
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     // ====== Lifecycle =========================================
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
 
         // ---- Setup: Find Views --------------------------------
         val btnStarters = findViewById<Button>(R.id.btn_starters)
