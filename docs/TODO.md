@@ -63,6 +63,13 @@
 - [ ] Clean unused resources
 - [ ] Commit final stable build
 
+## 🧱 Phase 7: Custom Components & Architecture Cleanup
+- [ ] Convert `card_container` into a reusable custom view class
+- [ ] Convert `popup_container` into `PopupView` class
+- [ ] Convert menu buttons into a `MenuCategoryButton` custom view
+- [ ] Remove duplicated XML blocks across activities
+- [ ] Reduce HomeActivity/MenuActivity code by moving UI logic into views
+
 ---
 
 ✅ **Progress tracking:**

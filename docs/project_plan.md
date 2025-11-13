@@ -77,6 +77,10 @@ _This document tracks the design, structure, and feature development for Casa di
 - Footer with “Find us” and social links
 - locales_config.xml support for explicit language listing
 - In-app language switch (EN/SV) using AppCompatDelegate
+- Refactor XML containers (popup_container, card_container, menu_container)
+  into reusable custom view classes for cleaner architecture
+- Replace repeated UI blocks with custom components (e.g. CardView, PopupView)
+- Move layout logic out of activities to reduce complexity
 
 ---
 
