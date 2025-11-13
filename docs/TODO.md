@@ -16,8 +16,8 @@
 - [x] Add text: short description, hours, address
 - [x] Include Instagram / Facebook icons
 - [x] Add close button for popup
-- [ ] Create and style overlay cards for “Welcome / News”
-- [ ] Connect vertical scroll with overlay cards on Home
+- [x] Create and style overlay cards for “Welcome / News”
+- [x] Connect vertical scroll with overlay cards on Home
 
 ---
 
