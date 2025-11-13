@@ -29,11 +29,11 @@
 ---
 
 ## 🧭 Phase 3: Navigation & Activities
-- [ ] Create `MenuActivity` as standalone screen
-- [ ] Connect navigation via Intent: Home → Menu
+- [x] Create `MenuActivity` as standalone screen
+- [x] Connect navigation via Intent: Home → Menu
 - [ ] Add optional `AboutActivity` for future expansion
-- [ ] Remove “Back to menu” button logic
-- [ ] Use Android’s system back navigation temporarily
+- [x] Remove “Back to menu” button logic
+- [x] Use Android’s system back navigation temporarily
 - [ ] Plan transition to bottom navigation (Home / Menu / About)
 - [ ] Add icon + label styling for navigation items
 
