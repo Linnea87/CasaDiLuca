@@ -3,27 +3,25 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_m"
         android:layout_marginHorizontal="@dimen/margin_m"
-        android:layout_marginBottom="@dimen/margin_s">
+        android:layout_marginBottom="@dimen/margin_m">
 
     <!-- ===== IMAGE BACKGROUND ============================== -->
-
     <ImageView
             android:id="@+id/card_img"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground"
-            android:contentDescription="@string/desc_image"/>
+            android:contentDescription="@string/desc_image" />
 
-
-    <!-- ===== OVERLAY LAYER (optional, for shadow) ============ -->
+    <!-- ===== OVERLAY LAYER (gradient/shadow) =============== -->
     <View
             android:id="@+id/card_overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/img_design" />
 
-    <!-- ===== TEXT LAYER ====================================== -->
+    <!-- ===== TEXT LAYER ==================================== -->
     <LinearLayout
             android:id="@+id/card_text_container"
             android:layout_width="match_parent"
@@ -39,7 +37,8 @@
                 android:text="@string/label_title"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_m"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:alpha="0.95" />
 
         <TextView
                 android:id="@+id/card_desc"
@@ -48,8 +47,8 @@
                 android:layout_marginTop="@dimen/margin_xs"
                 android:text="@string/label_desc"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_s" />
-
+                android:textSize="@dimen/text_s"
+                android:alpha="0.9" />
     </LinearLayout>
 
 </FrameLayout>
