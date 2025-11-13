@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         btnInfo = findViewById(R.id.btn_info)
 
         homeRecycler = findViewById(R.id.home_recycler)
-        homeAdapter = HomeAdapter(HomeData.items)
+        homeAdapter = HomeAdapter(HomeData.highlights)
         homeRecycler.layoutManager = LinearLayoutManager(this)
         homeRecycler.adapter = homeAdapter
 

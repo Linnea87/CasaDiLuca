@@ -35,6 +35,12 @@
     <dimen name="height_l">240dp</dimen>
     <dimen name="height_xl">320dp</dimen>
 
+    <!-- ===== CARD HEIGHTS ===== -->
+
+    <dimen name="card_height_menu">350dp</dimen>
+    <dimen name="card_height_home">150dp</dimen>
+
+
     <!-- ===== WIDTH ============================================= -->
 
     <dimen name="width_s">40dp</dimen>

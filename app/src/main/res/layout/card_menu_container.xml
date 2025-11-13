@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height_menu"
+        android:layout_marginHorizontal="@dimen/margin_m"
+        android:layout_marginBottom="@dimen/margin_m">
+
+    <!-- ===== IMAGE BACKGROUND ============================== -->
+    <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/desc_image" />
+
+    <!-- ===== SIMPLE OVERLAY (NO img_design) ================ -->
+    <View
+            android:id="@+id/card_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/overlay_20" />
+
+    <!-- ===== TEXT LAYER ==================================== -->
+    <LinearLayout
+            android:id="@+id/card_text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:padding="@dimen/padding_m">
+
+        <TextView
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_m"
+                android:textStyle="bold"
+                android:alpha="0.95" />
+
+        <TextView
+                android:id="@+id/card_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:text="@string/label_desc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_s"
+                android:alpha="0.9" />
+    </LinearLayout>
+
+</FrameLayout>

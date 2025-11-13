@@ -21,7 +21,7 @@ class MenuAdapter(
     // ====== Create & Bind ===================================
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_container, parent, false)
+            .inflate(R.layout.card_menu_container, parent, false)
         return MenuViewHolder(view)
     }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/height_m"
+        android:layout_width="@dimen/width_l"
+        android:layout_height="@dimen/card_height_home"
         android:layout_marginHorizontal="@dimen/margin_m"
         android:layout_marginBottom="@dimen/margin_m">
 
-    <!-- ===== IMAGE BACKGROUND ============================== -->
+    <!-- ===== IMAGE BACKGROUND ================================== -->
     <ImageView
             android:id="@+id/card_img"
             android:layout_width="match_parent"
@@ -14,22 +14,23 @@
             android:src="@drawable/ic_launcher_foreground"
             android:contentDescription="@string/desc_image" />
 
-    <!-- ===== SIMPLE OVERLAY (NO img_design) ================ -->
+    <!-- ===== OVERLAY (TEXT READABILITY) ======================== -->
     <View
             android:id="@+id/card_overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/overlay_20" />
 
-    <!-- ===== TEXT LAYER ==================================== -->
+    <!-- ===== TEXT CONTAINER ==================================== -->
     <LinearLayout
             android:id="@+id/card_text_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="bottom"
+            android:gravity="top"
             android:padding="@dimen/padding_m">
 
+        <!-- ===== TITLE ========================================= -->
         <TextView
                 android:id="@+id/card_title"
                 android:layout_width="wrap_content"
@@ -40,6 +41,7 @@
                 android:textStyle="bold"
                 android:alpha="0.95" />
 
+        <!-- ===== DESCRIPTION =================================== -->
         <TextView
                 android:id="@+id/card_desc"
                 android:layout_width="wrap_content"
@@ -49,6 +51,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_s"
                 android:alpha="0.9" />
+
     </LinearLayout>
 
 </FrameLayout>

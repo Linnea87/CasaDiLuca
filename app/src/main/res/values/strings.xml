@@ -12,11 +12,11 @@
 
     <string name="home_title">Welcome</string>
 
-    <string name="home_item_2_title">New desserts</string>
-    <string name="home_item_2_desc">Try our creamy panna cotta or classic tiramisù.</string>
+    <string name="home_item_1_title">Placeholder Title 1</string>
+    <string name="home_item_1_desc">Short description for placeholder content.</string>
 
-    <string name="home_item_3_title">Seasonal drinks</string>
-    <string name="home_item_3_desc">Fresh summer cocktails are now available.</string>
+    <string name="home_item_2_title">Placeholder Title 2</string>
+    <string name="home_item_2_desc">Another sample description text.</string>
 
 
     <!-- ===== POPUP INFO ============================================ -->
