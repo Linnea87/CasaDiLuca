@@ -1,104 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/home_root"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_root_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_design"
         android:orientation="vertical"
-        android:gravity="top"
+        android:background="@drawable/bg_design"
         tools:context=".HomeActivity">
 
-    <!-- ===== HERO SECTION ==================================== -->
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_l"
-            android:layout_marginBottom="@dimen/padding_m">
-
-        <ImageView
-                android:id="@+id/img_hero"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_hero_casa_di_luca"
-                android:contentDescription="@string/desc_image" />
-
-        <View
-                android:id="@+id/img_hero_overlay"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/overlay_20" />
-
-        <ImageButton
-                android:id="@+id/btn_info"
-                android:layout_width="@dimen/size_touch"
-                android:layout_height="@dimen/size_touch"
-                android:layout_gravity="top|end"
-                android:layout_margin="@dimen/margin_s"
-                android:background="@android:color/transparent"
-                android:padding="@dimen/padding_xs"
-                android:src="@drawable/ic_info"
-                android:contentDescription="@string/desc_info_icon" />
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:background="@color/overlay_65"
-                android:paddingHorizontal="@dimen/padding_m"
-                android:paddingVertical="@dimen/padding_s"
-                android:layout_margin="@dimen/margin_s">
-
-            <TextView
-                    android:id="@+id/text_hero_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/brand_title"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_xxl"
-                    android:letterSpacing="0.08"
-                    android:gravity="center"
-                    android:layout_marginBottom="@dimen/margin_s" />
-
-            <TextView
-                    android:id="@+id/text_hero_subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_tagline"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_s"
-                    android:letterSpacing="0.03"
-                    android:gravity="center" />
-        </LinearLayout>
-    </FrameLayout>
-
-    <!-- ===== WELCOME / NEWS SECTION =============================== -->
-    <TextView
-            android:id="@+id/home_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title"
-            android:textColor="@color/text_primary"
-            android:textSize="@dimen/text_l"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/margin_s"
-            android:layout_marginBottom="@dimen/margin_s" />
-
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_recycler"
+    <!-- ===== SCROLLABLE CONTENT =============================== -->
+    <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:padding="@dimen/padding_m"
-            android:clipToPadding="false"
-            tools:listitem="@layout/card_menu_container" />
+            android:fillViewport="true">
 
-    <Button
-            android:id="@+id/btn_open_menu"
-            style="@style/MenuBtnStyle"
-            android:text="@string/menu_title"
-            android:layout_marginBottom="@dimen/margin_m" />
+        <LinearLayout
+                android:id="@+id/home_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top">
+
+            <!-- ===== HERO SECTION ==================================== -->
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_l"
+                    android:layout_marginBottom="@dimen/padding_m">
+
+                <ImageView
+                        android:id="@+id/img_hero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_hero_casa_di_luca"
+                        android:contentDescription="@string/desc_image" />
+
+                <View
+                        android:id="@+id/img_hero_overlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/overlay_20" />
+
+                <ImageButton
+                        android:id="@+id/btn_info"
+                        android:layout_width="@dimen/size_touch"
+                        android:layout_height="@dimen/size_touch"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/margin_s"
+                        android:background="@android:color/transparent"
+                        android:padding="@dimen/padding_xs"
+                        android:src="@drawable/ic_info"
+                        android:contentDescription="@string/desc_info_icon" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@color/overlay_65"
+                        android:paddingHorizontal="@dimen/padding_m"
+                        android:paddingVertical="@dimen/padding_s"
+                        android:layout_margin="@dimen/margin_s">
+
+                    <TextView
+                            android:id="@+id/text_hero_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/brand_title"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_xxl"
+                            android:letterSpacing="0.08"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/margin_s" />
+
+                    <TextView
+                            android:id="@+id/text_hero_subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_tagline"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_s"
+                            android:letterSpacing="0.03"
+                            android:gravity="center" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- ===== WELCOME TITLE =================================== -->
+            <TextView
+                    android:id="@+id/home_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_welcome_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_l"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_xs" />
+
+            <!-- ===== WELCOME SUBTITLE =============================== -->
+            <TextView
+                    android:id="@+id/home_welcome_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_welcome_subtitle"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_s"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/margin_s" />
+
+            <!-- ===== WELCOME CARDS (TOP HORIZONTAL LIST) ============ -->
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/welcome_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m"
+                    android:clipToPadding="false"
+                    tools:listitem="@layout/card_home_container" />
+
+            <!-- ===== NEWS TITLE ===================================== -->
+            <TextView
+                    android:id="@+id/home_news_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_news_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_l"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s" />
+
+            <!-- ===== NEWS ON THE MENU (BOTTOM HORIZONTAL LIST) ====== -->
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m"
+                    android:clipToPadding="false"
+                    tools:listitem="@layout/card_home_container" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ===== BOTTOM NAVIGATION (FOOTER) ========================== -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/neutral_600"
+            app:menu="@menu/nav_menu"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:labelVisibilityMode="labeled" />
 
 </LinearLayout>

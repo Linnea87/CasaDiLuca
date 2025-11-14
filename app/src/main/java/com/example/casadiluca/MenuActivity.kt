@@ -19,12 +19,21 @@ class MenuActivity : AppCompatActivity() {
 
         menuRecycler = findViewById(R.id.menu_recycler)
 
-        val allDishes: List<MenuItem> =
-            MenuData.starters +
-                    MenuData.mains +
-                    MenuData.desserts
+        val category = intent.getStringExtra("CATEGORY")
 
-        menuAdapter = MenuAdapter(allDishes)
+        val itemsToShow: List<MenuItem> = when (category) {
+            "DRINKS" -> {
+                emptyList()
+            }
+            "FOOD" -> {
+                MenuData.starters + MenuData.mains + MenuData.desserts
+            }
+            else -> {
+                MenuData.starters + MenuData.mains + MenuData.desserts
+            }
+        }
+
+        menuAdapter = MenuAdapter(itemsToShow)
         menuRecycler.layoutManager = LinearLayoutManager(this)
         menuRecycler.adapter = menuAdapter
 

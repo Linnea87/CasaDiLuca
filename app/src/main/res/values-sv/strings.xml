@@ -8,7 +8,11 @@
     <string name="desc_item">Bild på menyitem</string>
     <string name="text_tagline">Äkta italienska smaker gjorda med kärlek</string>
 
-    <string name="home_title">Välkommen</string>
+    <string name="home_welcome_title">Välkommen</string>
+    <string name="home_welcome_subtitle">Vill du börja med något gott?</string>
+
+    <string name="home_news_title">Nyheter på menyn</string>
+
     <string name="home_item_1_title">Platshållartitel 1</string>
     <string name="home_item_1_desc">Kort beskrivning för platshållarinnehåll.</string>
 
@@ -77,4 +81,10 @@
 
     <string name="item_name_dessert_3">Citronsorbet</string>
     <string name="item_desc_dessert_3">Uppfriskande sorbet med siciliansk citron</string>
+
+    <!-- ===== NAV-FOOTER =========================================== -->
+
+    <string name="nav_home">Hem</string>
+    <string name="nav_drinks">Dryck</string>
+    <string name="nav_food">Mat</string>
 </resources>

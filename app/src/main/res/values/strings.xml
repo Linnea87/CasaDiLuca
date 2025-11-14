@@ -10,7 +10,10 @@
     <string name="desc_item">Menu item image</string>
     <string name="text_tagline">Authentic Italian flavors made with love</string>
 
-    <string name="home_title">Welcome</string>
+    <string name="home_welcome_title">Welcome</string>
+    <string name="home_welcome_subtitle">Would you like to start with something nice?</string>
+
+    <string name="home_news_title">News on the menu</string>
 
     <string name="home_item_1_title">Placeholder Title 1</string>
     <string name="home_item_1_desc">Short description for placeholder content.</string>
@@ -84,4 +87,10 @@
 
     <string name="item_name_dessert_3">Lemon Sorbet</string>
     <string name="item_desc_dessert_3">Refreshing sorbet with Sicilian lemon</string>
+
+    <!-- ===== NAV-FOOTER =========================================== -->
+
+    <string name="nav_home">Home</string>
+    <string name="nav_drinks">Drinks</string>
+    <string name="nav_food">Food</string>
 </resources>
