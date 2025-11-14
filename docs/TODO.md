@@ -31,20 +31,19 @@
 ## 🧭 Phase 3: Navigation & Activities
 - [x] Create `MenuActivity` as standalone screen
 - [x] Connect navigation via Intent: Home → Menu
-- [ ] Add optional `AboutActivity` for future expansion
 - [x] Remove “Back to menu” button logic
 - [x] Use Android’s system back navigation temporarily
-- [ ] Plan transition to bottom navigation (Home / Menu / About)
-- [ ] Add icon + label styling for navigation items
+- [x] Plan transition to bottom navigation (Home / Menu / About)
+- [x] Add icon + label styling for navigation items
 
 ---
 
 ## 🎨 Phase 4: Visual & Style Improvements
-- [ ] Apply consistent margins and paddings using neutral dimens
-- [ ] Add elevation levels to cards and buttons
-- [ ] Fine-tune gradients and overlay colors
-- [ ] Test color contrast for accessibility
-- [ ] Review font sizes and spacing for all screen sizes
+- [x] Apply consistent margins and paddings using neutral dimens
+- [x] Add elevation levels to cards and buttons
+- [x] Fine-tune gradients and overlay colors
+- [x] Test color contrast for accessibility
+- [x] Review font sizes and spacing for all screen sizes
 
 ---
 

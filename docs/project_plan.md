@@ -85,10 +85,10 @@ _This document tracks the design, structure, and feature development for Casa di
 ---
 
 ## ✅ G. Next Steps
-1. Create `HomeActivity` and layout (`activity_home.xml`)
-2. Create `MenuActivity` and connect via Intent
-3. Add info popup component for the hero section
-4. Add scrollable “News” section
-5. Implement bilingual text structure (EN/SV)
-6. Integrate social media icons (static links)
-7. Begin visual refinement (spacing, shadows, typography)
+✅ 1. Create `HomeActivity` and layout (`activity_home.xml`)
+✅ 2. Create `MenuActivity` and connect via Intent
+✅ 3. Add info popup component for the hero section
+✅ 4. Add scrollable “News” section
+✅ 5. Implement bilingual text structure (EN/SV)
+✅ 6. Integrate social media icons (static links)
+✅ 7. Begin visual refinement (spacing, shadows, typography)

@@ -25,7 +25,7 @@ class MenuActivity : AppCompatActivity() {
         // Välj vilka rätter som ska visas
         val itemsToShow: List<MenuItem> = when (category) {
             "DRINKS" -> {
-                // TODO: ersätt med riktig drinks-lista när du har den
+                // TODO: ersätt med riktig drinks-lista när ja har den
                 emptyList()
             }
             "FOOD" -> {
@@ -46,11 +46,9 @@ class MenuActivity : AppCompatActivity() {
             else -> R.id.nav_food
         }
 
-        // Lyssnare för klick i footern
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    // Tillbaka till Home
                     val intent = Intent(this, HomeActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     startActivity(intent)
@@ -65,7 +63,7 @@ class MenuActivity : AppCompatActivity() {
                         val intent = Intent(this, MenuActivity::class.java)
                         intent.putExtra("CATEGORY", "DRINKS")
                         startActivity(intent)
-                        finish() // stäng nuvarande så backstacken hålls ren
+                        finish()
                         true
                     }
                 }
