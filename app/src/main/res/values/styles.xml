@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== BOTTOM NAV ACTIVE INDICATOR ====================== -->
+    <style name="BottomNavActiveIndicatorStyle">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+</resources>

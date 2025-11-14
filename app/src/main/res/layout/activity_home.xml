@@ -153,6 +153,7 @@
             app:menu="@menu/nav_menu"
             app:itemIconTint="@android:color/white"
             app:itemTextColor="@android:color/white"
-            app:labelVisibilityMode="labeled" />
+            app:labelVisibilityMode="labeled"
+            app:itemActiveIndicatorStyle="@style/BottomNavActiveIndicatorStyle" />
 
 </LinearLayout>

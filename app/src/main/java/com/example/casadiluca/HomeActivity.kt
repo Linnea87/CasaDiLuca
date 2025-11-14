@@ -49,11 +49,11 @@ class HomeActivity : AppCompatActivity() {
 
         // ---- Bottom Navigation -------------------------------
 
-        val bottonNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        bottonNav.selectedItemId = R.id.nav_home
+        bottomNav.selectedItemId = R.id.nav_home
 
-        bottonNav.setOnItemSelectedListener { item ->
+        bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
                     true
@@ -74,6 +74,13 @@ class HomeActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
+        bottomNav.selectedItemId = R.id.nav_home
+    }
+
 
     // ====== Popup Navigation ===================================
     private fun showInfoPopup() {
