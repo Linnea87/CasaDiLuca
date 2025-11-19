@@ -37,9 +37,7 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         super.onViewCreated(view, savedInstanceState)
 
         menuRecycler = view.findViewById(R.id.menu_recycler)
-        val bottomNav = view.findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        // ---- Välj rätt lista baserat på kategori ----
         val itemsToShow: List<MenuItem> = when (category) {
             "DRINKS" -> emptyList()  // uppdateras sen när du har drinklistan
             "FOOD" -> MenuData.starters + MenuData.mains + MenuData.desserts
@@ -50,7 +48,7 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         menuAdapter = MenuAdapter(itemsToShow)
         menuRecycler.layoutManager = LinearLayoutManager(requireContext())
         menuRecycler.adapter = menuAdapter
-        
+
 
     }
 }
