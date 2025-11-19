@@ -1,6 +1,5 @@
 package com.example.casadiluca
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -44,40 +42,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         btnInfo.setOnClickListener {
             showInfoPopup()
         }
-
-        // ---- Bottom Navigation -------------------------------
-        val bottomNav = view.findViewById<BottomNavigationView>(R.id.bottom_nav)
-
-        bottomNav.selectedItemId = R.id.nav_home
-
-        bottomNav.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.nav_home -> {
-                    // Redan på Home → gör inget
-                    true
-                }
-                R.id.nav_drinks -> {
-                    val intent = Intent(requireContext(), MenuActivity::class.java)
-                    intent.putExtra("CATEGORY", "DRINKS")
-                    startActivity(intent)
-                    true
-                }
-                R.id.nav_food -> {
-                    val intent = Intent(requireContext(), MenuActivity::class.java)
-                    intent.putExtra("CATEGORY", "FOOD")
-                    startActivity(intent)
-                    true
-                }
-                else -> false
-            }
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        // När vi kommer tillbaka från MenuActivity → markera Home i footern
-        view?.findViewById<BottomNavigationView>(R.id.bottom_nav)
-            ?.selectedItemId = R.id.nav_home
     }
 
     // ====== Popup Navigation ===================================

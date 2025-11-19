@@ -144,16 +144,4 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <!-- ===== BOTTOM NAVIGATION (FOOTER) ========================== -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/neutral_600"
-            app:menu="@menu/nav_menu"
-            app:itemIconTint="@android:color/white"
-            app:itemTextColor="@android:color/white"
-            app:labelVisibilityMode="labeled"
-            app:itemActiveIndicatorStyle="@style/BottomNavActiveIndicatorStyle" />
-
 </LinearLayout>
