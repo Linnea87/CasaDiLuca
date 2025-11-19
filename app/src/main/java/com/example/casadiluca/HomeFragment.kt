@@ -3,15 +3,16 @@ package com.example.casadiluca
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.widget.Button
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomeActivity : AppCompatActivity() {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     // ====== View References ==================================
     private lateinit var btnInfo: ImageButton
@@ -20,52 +21,49 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var homeRecycler: RecyclerView
     private lateinit var homeAdapter: HomeAdapter
 
-    // ====== Lifecycle =========================================
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+    // ====== View lifecycle ====================================
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        // ---- Setup: Find Views --------------------------------
+        // ---- Setup: Find Views (via view) ---------------------
+        btnInfo = view.findViewById(R.id.btn_info)
 
-        btnInfo = findViewById(R.id.btn_info)
-
-        welcomeRecycler = findViewById(R.id.welcome_recycler)
+        welcomeRecycler = view.findViewById(R.id.welcome_recycler)
         welcomeAdapter = HomeAdapter(HomeData.welcome)
         welcomeRecycler.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         welcomeRecycler.adapter = welcomeAdapter
 
-        homeRecycler = findViewById(R.id.home_recycler)
+        homeRecycler = view.findViewById(R.id.home_recycler)
         homeAdapter = HomeAdapter(HomeData.highlights)
-        homeRecycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        homeRecycler.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         homeRecycler.adapter = homeAdapter
 
-
         // ---- Info button / popup ------------------------------
-
         btnInfo.setOnClickListener {
             showInfoPopup()
         }
 
         // ---- Bottom Navigation -------------------------------
-
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
+        val bottomNav = view.findViewById<BottomNavigationView>(R.id.bottom_nav)
 
         bottomNav.selectedItemId = R.id.nav_home
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
+                    // Redan på Home → gör inget
                     true
                 }
                 R.id.nav_drinks -> {
-                    val intent = Intent(this, MenuActivity::class.java)
+                    val intent = Intent(requireContext(), MenuActivity::class.java)
                     intent.putExtra("CATEGORY", "DRINKS")
                     startActivity(intent)
                     true
                 }
                 R.id.nav_food -> {
-                    val intent = Intent(this, MenuActivity::class.java)
+                    val intent = Intent(requireContext(), MenuActivity::class.java)
                     intent.putExtra("CATEGORY", "FOOD")
                     startActivity(intent)
                     true
@@ -77,17 +75,17 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
-        bottomNav.selectedItemId = R.id.nav_home
+        // När vi kommer tillbaka från MenuActivity → markera Home i footern
+        view?.findViewById<BottomNavigationView>(R.id.bottom_nav)
+            ?.selectedItemId = R.id.nav_home
     }
-
 
     // ====== Popup Navigation ===================================
     private fun showInfoPopup() {
+        val dialogView = LayoutInflater.from(requireContext())
+            .inflate(R.layout.popup_container, null)
 
-        val dialogView = LayoutInflater.from(this).inflate(R.layout.popup_container, null)
-
-        val dialog = AlertDialog.Builder(this)
+        val dialog = AlertDialog.Builder(requireContext())
             .setView(dialogView)
             .create()
 
@@ -97,7 +95,7 @@ class HomeActivity : AppCompatActivity() {
         val btnFacebook = dialogView.findViewById<ImageButton>(R.id.popup_facebook)
 
         btnInstagram.setOnClickListener {
-            //link later
+            // link later
         }
 
         btnFacebook.setOnClickListener {
@@ -105,12 +103,10 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val btnClose = dialogView.findViewById<ImageButton>(R.id.btn_close)
-
         btnClose.setOnClickListener {
             dialog.dismiss()
         }
 
         dialog.show()
     }
-
 }

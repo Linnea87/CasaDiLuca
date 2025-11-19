@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/bg_design"
-        tools:context=".HomeActivity">
+        tools:context=".MainActivity">
 
     <!-- ===== SCROLLABLE CONTENT =============================== -->
     <androidx.core.widget.NestedScrollView
